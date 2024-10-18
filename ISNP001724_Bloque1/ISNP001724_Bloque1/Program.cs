@@ -106,6 +106,17 @@ namespace ISNP001724_Bloque1
                 Console.WriteLine("El numero no es primo");
             }
         }
+        static void Promedio()
+        {
+            int suma = 0;
+            for (int i = 1; i <= 10; i++)
+            {
+                Console.WriteLine("Ingrese un numero: ");
+                int numero = int.Parse(Console.ReadLine());
+                suma += numero;
+            }
+            Console.WriteLine("El promedio de los numeros es: " + suma / 10);
+        }
     }
 }
 
