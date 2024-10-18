@@ -1,0 +1,7 @@
+C:\Users\Oscar Alvarenga\Desktop\Actividad1\ISNP001724_Bloque1\ISNP001724_Bloque1\bin\Debug\ISNP001724_Bloque1.exe.config
+C:\Users\Oscar Alvarenga\Desktop\Actividad1\ISNP001724_Bloque1\ISNP001724_Bloque1\bin\Debug\ISNP001724_Bloque1.exe
+C:\Users\Oscar Alvarenga\Desktop\Actividad1\ISNP001724_Bloque1\ISNP001724_Bloque1\bin\Debug\ISNP001724_Bloque1.pdb
+C:\Users\Oscar Alvarenga\Desktop\Actividad1\ISNP001724_Bloque1\ISNP001724_Bloque1\obj\Debug\ISNP001724_Bloque1.csproj.AssemblyReference.cache
+C:\Users\Oscar Alvarenga\Desktop\Actividad1\ISNP001724_Bloque1\ISNP001724_Bloque1\obj\Debug\ISNP001724_Bloque1.csproj.CoreCompileInputs.cache
+C:\Users\Oscar Alvarenga\Desktop\Actividad1\ISNP001724_Bloque1\ISNP001724_Bloque1\obj\Debug\ISNP001724_Bloque1.exe
+C:\Users\Oscar Alvarenga\Desktop\Actividad1\ISNP001724_Bloque1\ISNP001724_Bloque1\obj\Debug\ISNP001724_Bloque1.pdb
