@@ -45,6 +45,23 @@ namespace ISNP001724_Bloque1
                     break;
             }
         }
+        static void Comparacion()
+        {
+            Console.WriteLine("Ingrese un numero: ");
+            int numero = int.Parse(Console.ReadLine());
+            if (numero > 0)
+            {
+                Console.WriteLine("El numero es positivo");
+            }
+            else if (numero < 0)
+            {
+                Console.WriteLine("El numero es negativo");
+            }
+            else
+            {
+                Console.WriteLine("El numero es cero");
+            }
+        }
     }
 }
 
