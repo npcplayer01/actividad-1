@@ -71,6 +71,20 @@ namespace ISNP001724_Bloque1
                 Console.WriteLine(numero + " x " + i + " = " + numero * i);
             }
         }
+        static void Suma()
+        {
+            int suma = 0;
+            for (int i = 1; i <= 10; i++)
+            {
+                Console.WriteLine("Ingrese un numero: ");
+                int numero = int.Parse(Console.ReadLine());
+                if (numero > 0)
+                {
+                    suma += numero;
+                }
+            }
+            Console.WriteLine("La suma de los numeros positivos es: " + suma);
+        }
     }
 }
 
