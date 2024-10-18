@@ -85,6 +85,27 @@ namespace ISNP001724_Bloque1
             }
             Console.WriteLine("La suma de los numeros positivos es: " + suma);
         }
+        static void Primos()
+        {
+            Console.WriteLine("Ingrese un numero: ");
+            int numero = int.Parse(Console.ReadLine());
+            int contador = 0;
+            for (int i = 1; i <= numero; i++)
+            {
+                if (numero % i == 0)
+                {
+                    contador++;
+                }
+            }
+            if (contador == 2)
+            {
+                Console.WriteLine("El numero es primo");
+            }
+            else
+            {
+                Console.WriteLine("El numero no es primo");
+            }
+        }
     }
 }
 
