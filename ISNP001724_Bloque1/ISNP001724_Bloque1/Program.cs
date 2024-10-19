@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics.Eventing.Reader;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -46,11 +47,10 @@ namespace ISNP001724_Bloque1
                             Promedio();
                             break;
                         case 0:
-                            break;
-                        default:
                             continuar = "n";
-                            break;
+                            break;                 
                     }
+                    
                 }
                 void Comparacion()
                 {
