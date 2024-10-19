@@ -52,9 +52,9 @@ namespace ISNP001724_Bloque1
                     }
                     
                 }
-                void Comparacion()
+                void Comparacion() 
                 {
-                    Console.WriteLine("Ingrese un numero: ");
+                    Console.WriteLine("Ingrese un numero para saber si es positivo o negativo: ");
                     int numero = int.Parse(Console.ReadLine());
                     if (numero > 0)
                     {
@@ -67,6 +67,7 @@ namespace ISNP001724_Bloque1
                     else
                     {
                         Console.WriteLine("El numero es cero");
+                       
                     }
                 }
                 void Tablas()
@@ -81,16 +82,22 @@ namespace ISNP001724_Bloque1
                 void Suma()
                 {
                     int suma = 0;
-                    for (int i = 1; i <= 10; i++)
+                    while (true)
                     {
-                        Console.WriteLine("Ingrese un numero: ");
+                        Console.WriteLine("\n"+"Ingrese un numero: ");
                         int numero = int.Parse(Console.ReadLine());
+
                         if (numero > 0)
                         {
                             suma += numero;
+                            Console.WriteLine("La suma hasta el momento es: "+suma);
+                        }
+                        else if (numero == 0)
+                        {
+                            Console.WriteLine("\n"+"La suma de los numeros positivos es: " + suma);
+                            break; 
                         }
                     }
-                    Console.WriteLine("La suma de los numeros positivos es: " + suma);
                 }
                 void Primos()
                 {
