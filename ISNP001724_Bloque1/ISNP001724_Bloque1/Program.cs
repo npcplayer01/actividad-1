@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics.Eventing.Reader;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,8 +12,7 @@ namespace ISNP001724_Bloque1
     {
         static void Main(string[] args)
         {
-            String continuar = "s";
-            while (continuar == "s")
+            while (true)
             {
                 Console.WriteLine("\n" + "Selecciona una opción: ");
                 Console.WriteLine("1: COMPARACION DE POSITIVOS O NEGATIVOS ");
@@ -48,7 +48,7 @@ namespace ISNP001724_Bloque1
                                 Promedio();
                                 break;
                             case 0:
-                                continuar = "n";
+                                Console.WriteLine("El programa se cerrará...");
                                 break;
                         }
 
@@ -57,6 +57,11 @@ namespace ISNP001724_Bloque1
                     {
                         Console.WriteLine("Opcion no valida, intente de nuevo");
                     }
+                    if (opcion == 0)
+                    {
+                        break;
+                    }
+
                 }
             }
         }
@@ -64,7 +69,7 @@ namespace ISNP001724_Bloque1
         {
             while (true)
             {
-                Console.WriteLine("Ingrese un numero para saber si es positivo o negativo: ");
+                Console.WriteLine("Ingrese un numero para saber si es positivo o negativo, usa 0 para salir: ");
                 int numero = int.Parse(Console.ReadLine());
                 if (numero > 0)
                 {
@@ -118,23 +123,30 @@ namespace ISNP001724_Bloque1
         }
         static void Primos()
         {
-            Console.WriteLine("Ingrese un numero: ");
-            int numero = int.Parse(Console.ReadLine());
-            int contador = 0;
-            for (int i = 1; i <= numero; i++)
+            while (true)
             {
-                if (numero % i == 0)
+                Console.WriteLine("Ingrese un numero para validar si es primo, ingrese 0 para salir: ");
+                int numero = int.Parse(Console.ReadLine());
+                int contador = 0;
+                for (int i = 1; i <= numero; i++)
                 {
-                    contador++;
+                    if (numero % i == 0)
+                    {
+                        contador++;
+                    }
                 }
-            }
-            if (contador == 2)
-            {
-                Console.WriteLine("El numero es primo");
-            }
-            else
-            {
-                Console.WriteLine("El numero no es primo");
+                if (contador == 2)
+                {
+                    Console.WriteLine("El numero es primo");
+                }
+                else
+                {
+                    Console.WriteLine("El numero no es primo");
+                }
+                if (numero == 0)
+                {
+                    break;
+                }
             }
         }
         static void Promedio()
@@ -143,17 +155,16 @@ namespace ISNP001724_Bloque1
             int contador = 0;
             int numero = 0;
 
-            Console.WriteLine("Ingrese números para calcular el promedio. Para finalizar, ingrese 0: ");
-            while (int.TryParse(Console.ReadLine(), out numero) && numero != 0)
-            {
-                suma += numero;
-                contador++;
+            
+                Console.WriteLine("Ingrese números para calcular el promedio. Para finalizar, ingrese 0: ");
+                while (int.TryParse(Console.ReadLine(), out numero) && numero != 0)
+                {
+                    suma += numero;
+                    contador++;
+                }
+
+                double promedio = (double)suma / contador;
+                Console.WriteLine("El promedio de los números es: " + promedio);
             }
-
-            double promedio = (double)suma / contador;
-            Console.WriteLine("El promedio de los números es: " + promedio);
         }
-
-
     }
-}
