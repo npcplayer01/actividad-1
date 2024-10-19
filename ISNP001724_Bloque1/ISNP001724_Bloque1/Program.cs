@@ -57,103 +57,103 @@ namespace ISNP001724_Bloque1
                     {
                         Console.WriteLine("Opcion no valida, intente de nuevo");
                     }
-
-                    void Comparacion()
-                    {
-                        while (true)
-                        {
-                            Console.WriteLine("Ingrese un numero para saber si es positivo o negativo: ");
-                            int numero = int.Parse(Console.ReadLine());
-                            if (numero > 0)
-                            {
-                                Console.WriteLine("El numero es positivo");
-                            }
-                            else if (numero < 0)
-                            {
-                                Console.WriteLine("El numero es negativo");
-                            }
-                            else if (numero == 0)
-                            {
-                                Console.WriteLine("El numero es cero, el programa se detendrá");
-                                break;
-                            }
-                        }
-                    }
-                    void Tablas()
-                    {
-                        Console.WriteLine("Ingrese un numero: ");
-                        int numero = int.Parse(Console.ReadLine());
-                        for (int i = 1; i <= 10; i++)
-                        {
-                            Console.WriteLine(numero + " x " + i + " = " + numero * i);
-                        }
-                    }
-                    void Suma()
-                    {
-                        int suma = 0;
-                        while (true)
-                        {
-                            Console.WriteLine("\n" + "Ingrese un numero positivo, recuerde que los numeros negativos finalizan el programa o bien puede detenerse usando 0: ");
-                            int numero = int.Parse(Console.ReadLine());
-
-                            if (numero > 0)
-                            {
-                                suma += numero;
-                                Console.WriteLine("La suma hasta el momento es: " + suma);
-                            }
-                            else if (numero == 0)
-                            {
-                                Console.WriteLine("\n" + "La suma de los numeros positivos es: " + suma);
-                                break;
-                            }
-                            else if (numero < 0)
-                            {
-                                Console.WriteLine("El numero es negativo, no se sumara");
-                                Console.WriteLine("La suma de los numeros positivos es: " + suma);
-                                break;
-                            }
-                        }
-                    }
-                    void Primos()
-                    {
-                        Console.WriteLine("Ingrese un numero: ");
-                        int numero = int.Parse(Console.ReadLine());
-                        int contador = 0;
-                        for (int i = 1; i <= numero; i++)
-                        {
-                            if (numero % i == 0)
-                            {
-                                contador++;
-                            }
-                        }
-                        if (contador == 2)
-                        {
-                            Console.WriteLine("El numero es primo");
-                        }
-                        else
-                        {
-                            Console.WriteLine("El numero no es primo");
-                        }
-                    }
-                    void Promedio()
-                    {
-                        int suma = 0;
-                        int contador = 0;
-                        int numero = 0;
-
-                        Console.WriteLine("Ingrese números para calcular el promedio. Para finalizar, ingrese 0: ");
-                        while (int.TryParse(Console.ReadLine(), out numero) && numero != 0)
-                        {
-                            suma += numero;
-                            contador++;
-                        }
-
-                        double promedio = (double)suma / contador;
-                        Console.WriteLine("El promedio de los números es: " + promedio);
-                    }
-
                 }
             }
         }
+        static void Comparacion()
+        {
+            while (true)
+            {
+                Console.WriteLine("Ingrese un numero para saber si es positivo o negativo: ");
+                int numero = int.Parse(Console.ReadLine());
+                if (numero > 0)
+                {
+                    Console.WriteLine("El numero es positivo");
+                }
+                else if (numero < 0)
+                {
+                    Console.WriteLine("El numero es negativo");
+                }
+                else if (numero == 0)
+                {
+                    Console.WriteLine("El numero es cero, el programa se detendrá");
+                    break;
+                }
+            }
+        }
+        static void Tablas()
+        {
+            Console.WriteLine("Ingrese un numero: ");
+            int numero = int.Parse(Console.ReadLine());
+            for (int i = 1; i <= 10; i++)
+            {
+                Console.WriteLine(numero + " x " + i + " = " + numero * i);
+            }
+        }
+        static void Suma()
+        {
+            int suma = 0;
+            while (true)
+            {
+                Console.WriteLine("\n" + "Ingrese un numero positivo, recuerde que los numeros negativos finalizan el programa o bien puede detenerse usando 0: ");
+                int numero = int.Parse(Console.ReadLine());
+
+                if (numero > 0)
+                {
+                    suma += numero;
+                    Console.WriteLine("La suma hasta el momento es: " + suma);
+                }
+                else if (numero == 0)
+                {
+                    Console.WriteLine("\n" + "La suma de los numeros positivos es: " + suma);
+                    break;
+                }
+                else if (numero < 0)
+                {
+                    Console.WriteLine("El numero es negativo, no se sumara");
+                    Console.WriteLine("La suma de los numeros positivos es: " + suma);
+                    break;
+                }
+            }
+        }
+       static void Primos()
+        {
+            Console.WriteLine("Ingrese un numero: ");
+            int numero = int.Parse(Console.ReadLine());
+            int contador = 0;
+            for (int i = 1; i <= numero; i++)
+            {
+                if (numero % i == 0)
+                {
+                    contador++;
+                }
+            }
+            if (contador == 2)
+            {
+                Console.WriteLine("El numero es primo");
+            }
+            else
+            {
+                Console.WriteLine("El numero no es primo");
+            }
+        }
+       static void Promedio()
+        {
+            int suma = 0;
+            int contador = 0;
+            int numero = 0;
+
+            Console.WriteLine("Ingrese números para calcular el promedio. Para finalizar, ingrese 0: ");
+            while (int.TryParse(Console.ReadLine(), out numero) && numero != 0)
+            {
+                suma += numero;
+                contador++;
+            }
+
+            double promedio = (double)suma / contador;
+            Console.WriteLine("El promedio de los números es: " + promedio);
+        }
+
+
     }
 }
