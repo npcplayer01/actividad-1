@@ -116,7 +116,7 @@ namespace ISNP001724_Bloque1
                 }
             }
         }
-       static void Primos()
+        static void Primos()
         {
             Console.WriteLine("Ingrese un numero: ");
             int numero = int.Parse(Console.ReadLine());
@@ -137,7 +137,7 @@ namespace ISNP001724_Bloque1
                 Console.WriteLine("El numero no es primo");
             }
         }
-       static void Promedio()
+        static void Promedio()
         {
             int suma = 0;
             int contador = 0;
