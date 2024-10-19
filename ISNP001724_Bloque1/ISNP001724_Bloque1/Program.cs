@@ -84,7 +84,7 @@ namespace ISNP001724_Bloque1
                     int suma = 0;
                     while (true)
                     {
-                        Console.WriteLine("\n"+"Ingrese un numero: ");
+                        Console.WriteLine("\n"+"Ingrese un numero positivo, recuerde que los numeros negativos finalizan el programa o bien puede detenerse usando 0: ");
                         int numero = int.Parse(Console.ReadLine());
 
                         if (numero > 0)
@@ -96,6 +96,12 @@ namespace ISNP001724_Bloque1
                         {
                             Console.WriteLine("\n"+"La suma de los numeros positivos es: " + suma);
                             break; 
+                        }
+                        else if (numero < 0)
+                        {
+                            Console.WriteLine("El numero es negativo, no se sumara");
+                            Console.WriteLine("La suma de los numeros positivos es: " + suma);
+                            break;
                         }
                     }
                 }
